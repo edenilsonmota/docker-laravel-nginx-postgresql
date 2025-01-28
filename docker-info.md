@@ -29,7 +29,7 @@
 
 3. **Instalar o Laravel (se ainda não estiver instalado):**
    ```bash
-   docker exec -it laravel_app composer create-project --prefer-dist laravel/laravel .
+   sudo rm -rf src/* && docker exec -it laravel_app composer create-project --prefer-dist laravel/laravel .
    ```
 
 4. **Configurar o arquivo `.env` do Laravel:**
