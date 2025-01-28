@@ -4,6 +4,9 @@
    -  Renomeie o arquivo `.env.example` para `.env`.
    - Atualize as configurações de banco de dados no arquivo `.env` do do docker:
    ```env
+   UID=1000 # Substitua pelo UID do seu usuário
+   GID=1000 # Substitua pelo GID do seu grupo
+   
    # Configurações do Laravel
    APP_PORT=8080
    PHP_PORT=9000
