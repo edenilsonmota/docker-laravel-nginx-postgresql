@@ -52,7 +52,8 @@
 
 - **Permissões:** Certifique-se de que as pastas `storage` e `bootstrap/cache` do Laravel tenham as permissões corretas:
   ```bash
-  docker exec -it laravel_app chmod -R 775 storage bootstrap/cache
+  docker exec -it laravel_app chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+   docker exec -it laravel_app chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
   ```
 
 - **Logs:** Verifique os logs do Docker para identificar problemas:
