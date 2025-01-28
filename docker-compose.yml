@@ -9,6 +9,7 @@ services:
       - ./src/storage:/var/www/html/storage
       - ./src/vendor:/var/www/html/vendor
       - ./src/node_modules:/var/www/html/node_modules
+    user: "${UID}:${GID}"  
     networks:
       - laravel_network
     ports:
